@@ -155,7 +155,12 @@ address {
 .section-hero {
 	padding: 188px 0;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-color: var(--dark);
+	max-width: 1440px;
+	height: 600px;
+	margin: 0 auto;
 }
 .hero-title {
 	font-weight: 700;
@@ -204,19 +209,15 @@ address {
 	display: flex;
 	justify-content: space-between;
 }
-.advantage-icon-list {
-	display: flex;
-	justify-content: space-between;
-}
-.advantage-icon-item {
-	background-color: var(--light);
-	min-width: 264px;
-	min-height: 112px;
-}
+
 .advantage-icon-link {
 	display: flex;
 	justify-content: center;
-	padding: 24px 100px;
+	align-items: center;
+	background-color: var(--light);
+	min-width: 264px;
+	min-height: 112px;
+	margin-bottom: 8px;
 }
 
 .section-item.advantage {
@@ -246,9 +247,8 @@ address {
 
 .social-list {
 	display: flex;
+	justify-content: center;
 	gap: 24px;
-	padding-left: 16px;
-	padding-right: 16px;
 }
 .social-list-link {
 	display: flex;
@@ -300,29 +300,26 @@ address {
 	gap: 24px;
 	margin-top: 72px;
 }
-.customer-section-item {
-	border: 1px solid var(--subtle-text);
+
+.customer-section-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid currentColor;
+	color: var(--subtle-text);
 	border-radius: 4px;
 	width: 168px;
 	height: 88px;
 }
-.customer-section-link {
-	display: flex;
-	justify-content: center;
-	padding: 16px 32px;
-}
-
-.customer-section-item:hover,
-.customer-section-item:focus {
-	border-color: var(--button-active);
+.customer-section-link:hover,
+.customer-section-link:focus {
+	color: var(--button-active);
 }
 .customer-section-icon {
-	fill: var(--subtle-text);
+	fill: currentColor;
 }
-.customer-section-link:hover .customer-section-icon,
-.customer-section-link:focus .customer-section-icon {
-	fill: var(--button-active);
-}
+
 .section-list-btn {
 	display: flex;
 	justify-content: center;
