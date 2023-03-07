@@ -31,11 +31,13 @@ p {
 	margin-top: 0;
 	margin-bottom: 0;
 }
+
 ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+
 a {
 	text-decoration: none;
 }
@@ -45,12 +47,14 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
 button {
 	display: block;
 	cursor: pointer;
 	border: none;
 	border-radius: 4px;
 }
+
 address {
 	font-style: normal;
 }
@@ -60,11 +64,10 @@ address {
 	padding: 0 15px;
 	margin: 0 auto;
 }
+
 .section {
 	padding-top: 120px;
 	padding-bottom: 120px;
-
-	outline: 2px solid tomato;
 }
 
 .visually-hidden {
@@ -88,6 +91,8 @@ address {
 }
 
 .header-logo {
+	margin-right: 76px;
+
 	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 800;
@@ -97,7 +102,6 @@ address {
 	text-transform: uppercase;
 	/* IRIS */
 	color: var(--primary-brand);
-	margin-right: 76px;
 }
 
 .navigation {
@@ -113,7 +117,6 @@ address {
 }
 .header-list.address {
 	display: flex;
-
 	gap: 40px;
 	padding-top: 24px;
 	padding-bottom: 24px;
@@ -214,10 +217,12 @@ address {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--light);
 	min-width: 264px;
 	min-height: 112px;
 	margin-bottom: 8px;
+
+	background-color: var(--light);
+	border-radius: 4px;
 }
 
 .section-item.advantage {
@@ -342,12 +347,12 @@ address {
 	border-radius: 4px;
 
 	padding: 12px 24px;
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter:hover,
 .filter:focus {
 	color: var(--white-text-color);
 	background-color: var(--button-active);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .section-portfolio {
@@ -358,8 +363,10 @@ address {
 	display: flex;
 	flex-wrap: wrap;
 }
-.section-img {
-	border: 1px solid var(--light);
+.section-portfolio-link:hover,
+.section-portfolio-link:focus {
+	display: block;
+
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .section-item.portfolio:not(:nth-child(3n)) {
